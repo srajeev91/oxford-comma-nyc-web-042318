@@ -6,8 +6,10 @@ def oxford_comma(array)
     i += 1
   end
   
-  i = array.length - 1
-  my_new_array.push("and #{array[i]}")
+  if array.length > 1
+    i = array.length - 1
+    my_new_array.push("and #{array[i]}")
+  end
   
   my_new_array.join(", ")
 end
